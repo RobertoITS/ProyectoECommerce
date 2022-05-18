@@ -1,0 +1,13 @@
+<div class="row row-cols-sm-2 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let url of pr">
+    <div class="card border-primary img-hvr" >
+      <img [src]=url.u_r_l class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Descripcion del producto.</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>

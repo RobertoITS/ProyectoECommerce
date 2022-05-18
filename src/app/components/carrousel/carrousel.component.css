@@ -1,0 +1,4 @@
+/*Le aplicamos un padding a los elementos child de la clase carousel-inner*/
+.carousel-inner > .carousel-item{
+  padding: 0% 20%;
+}

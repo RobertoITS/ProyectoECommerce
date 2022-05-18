@@ -1,0 +1,13 @@
+/*Efecto hover sobre imagen, aumenta el alpha*/
+.img-hvr img{
+  transition:all .5s ease-in-out;
+  width: auto;
+  height: auto;
+}
+.img-hvr:hover img{
+  filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	-khtml-opacity: 0.5;
+  transition:all .5s ease-in-out;
+}
