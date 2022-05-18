@@ -5,6 +5,7 @@ import { TittleComponent } from './tittle/tittle.component';
 import { CardComponent } from './card/card.component';
 import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     AccordionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ], exports: [
     CarrouselComponent,
     TittleComponent,

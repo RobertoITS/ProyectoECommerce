@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Products } from './Products';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/Product';
 
 @Component({
   selector: 'app-card',
@@ -10,13 +10,11 @@ import { Products } from './Products';
 
 export class CardComponent implements OnInit {
 
-  pr: Products[] = []
+  @Input() url: String = ""
+  @Input() description: String = ""
+  @Input() name: String = ""
 
-  constructor() {
-    this.pr.push({u_r_l:"https://cdn.pixabay.com/photo/2018/06/25/17/03/fashion-3497413_960_720.jpg"},
-    {u_r_l:"https://cdn.pixabay.com/photo/2018/06/25/17/01/fashion-3497406_960_720.jpg"},
-    {u_r_l:"https://cdn.pixabay.com/photo/2018/06/25/17/01/fashion-3497408_1280.jpg"})
-   }
+  constructor() { }
 
   ngOnInit(): void {
 

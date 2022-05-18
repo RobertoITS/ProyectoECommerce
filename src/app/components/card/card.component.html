@@ -1,13 +1,14 @@
-<div class="row row-cols-sm-2 row-cols-md-3 g-4">
-  <div class="col" *ngFor="let url of pr">
+<!--Creamos, en el archivo ts de este componente, 3 variables que reciben datos de otro componente.
+Les asignamos los valores obtenidos a cada elemento de este componente:-->
+  <div class="col">
     <div class="card border-primary img-hvr" >
-      <img [src]=url.u_r_l class="card-img-top"
+      <img [src]="url" class="card-img-top"
         alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Descripcion del producto.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <h5 class="card-title">{{ name }}</h5>
+        <p class="card-text">{{ description }}</p>
+        <a [routerLink]="['/product', url, name, description]" class="btn btn-primary">Comprar</a>
       </div>
     </div>
   </div>
-</div>
+

@@ -1,0 +1,46 @@
+<app-carrousel></app-carrousel>
+
+<div class="container">
+  <hr style="margin-top: 5%;">
+  <h2 class="text-center">Trending top:</h2>
+  <hr style="margin-bottom: 4%">
+</div>
+
+
+<div class="container">
+  <div class="row row-cols-sm-1 row-cols-md-3 g-4">
+    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+  </div>
+</div>
+
+<div class="container">
+  <hr style="margin-top: 5%;">
+  <h2 class="text-center">Destacados:</h2>
+  <hr style="margin-bottom: 4%">
+</div>
+
+
+<div class="container">
+  <div class="row row-cols-sm-2 row-cols-md-3 g-4">
+    <!--Usamos el ngFor en la app-card, para que no se creen varias row, sino solamente
+    las col.
+    Instanciamos las Input creadas en el componente card, con los datos obtenidos en el archivo ts
+    de este componente-->
+    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+  </div>
+  <div class="d-grid gap-2" style="margin-top: 5%;">
+    <button class="btn btn-primary" type="button">Ver todos los productos</button>
+  </div>
+</div>
+
+<div class="container">
+  <hr style="margin-top: 5%;">
+  <h2 class="text-center">Ofertas:</h2>
+  <hr style="margin-bottom: 4%">
+</div>
+
+<div class="container">
+  <div class="row row-cols-sm-3 row-cols-md-3 g-4">
+    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+  </div>
+</div>

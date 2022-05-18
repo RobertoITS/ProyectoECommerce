@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ComponentsModule } from '../components/components.module';
 import { FooterComponent } from './footer/footer.component';
 import { FloatbuttonComponent } from './floatbutton/floatbutton.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { FloatbuttonComponent } from './floatbutton/floatbutton.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    AppRoutingModule
   ], exports: [
     NavbarComponent,
     FooterComponent,

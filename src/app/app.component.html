@@ -1,44 +1,10 @@
-<body>
-  <app-navbar></app-navbar>
-  <!--Aqui colocamos el offcanvas, pero en el app-navbar, esta el llamado al mismo.-->
-  <app-offcanvas></app-offcanvas>
-  <app-carrousel></app-carrousel>
+<app-navbar></app-navbar>
+<!--Aqui colocamos el offcanvas, pero en el app-navbar, esta el llamado al mismo.-->
+<app-offcanvas></app-offcanvas>
 
-  <div class="container" >
-    <hr style="margin-top: 5%;">
-    <h2 class="text-center">Trending top:</h2>
-    <hr style="margin-bottom: 4%">
-  </div>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+<app-floatbutton></app-floatbutton>
 
 
-  <div class="container">
-    <app-card></app-card>
-  </div>
-
-  <div class="container" >
-    <hr style="margin-top: 5%;">
-    <h2 class="text-center">Destacados:</h2>
-    <hr style="margin-bottom: 4%">
-  </div>
-
-
-  <div class="container">
-    <app-card></app-card>
-    <div class="d-grid gap-2" style="margin-top: 5%;">
-      <button class="btn btn-primary" type="button">Ver todos los productos</button>
-    </div>
-  </div>
-
-  <div class="container" >
-    <hr style="margin-top: 5%;">
-    <h2 class="text-center">Ofertas:</h2>
-    <hr style="margin-bottom: 4%">
-  </div>
-
-  <div class="container">
-    <app-card></app-card>
-  </div>
-
-  <app-footer></app-footer>
-  <app-floatbutton></app-floatbutton>
-</body>
