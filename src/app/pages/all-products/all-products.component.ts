@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Product } from 'src/app/model/Product';
 
 @Component({
   selector: 'app-all-products',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllProductsComponent implements OnInit {
 
-  constructor() { }
+  //Obtenemos la lista guardada en local
+  storageList: Product[] = JSON.parse(localStorage.getItem('list')!)
+
+  title: String = "Todos"
+
+  all: String = "Todos"
+
+  type: String = ""
+  constructor(private _activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
+    //Actualizamos los valores con un observador
+    this._activatedRoute.paramMap.subscribe((params: ParamMap)=>
+      this.title = params.get('type')!
+    )
+    this.type = this.title
   }
 
 }

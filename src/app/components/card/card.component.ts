@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   @Input() url: String = ""
   @Input() description: String = ""
   @Input() name: String = ""
+  @Input() type: String = ""
 
   constructor() { }
 

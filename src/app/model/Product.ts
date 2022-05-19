@@ -1,5 +1,6 @@
 export interface Product{
   url: String,
   description: String,
-  name: String
+  name: String,
+  type: String
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  public esto
+  @Input() list = []
+
+  all: String = "Todos"
+  dress: String = "Vestido"
+  pants: String = "Pantalon"
   constructor() {
-    this.esto = "Hola mundo"
+
    }
 
   ngOnInit(): void {

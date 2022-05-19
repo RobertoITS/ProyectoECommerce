@@ -9,7 +9,7 @@
 
 <div class="container">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
-    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>
   </div>
 </div>
 
@@ -26,7 +26,7 @@
     las col.
     Instanciamos las Input creadas en el componente card, con los datos obtenidos en el archivo ts
     de este componente-->
-    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>
   </div>
   <div class="d-grid gap-2" style="margin-top: 5%;">
     <button class="btn btn-primary" type="button">Ver todos los productos</button>
@@ -41,6 +41,6 @@
 
 <div class="container">
   <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-4">
-    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+    <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>
   </div>
 </div>

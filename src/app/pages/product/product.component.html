@@ -14,4 +14,10 @@
   <hr style="margin-top: 5%">
   <h2 class="text-center">RELACIONADOS:</h2>
   <hr style="margin-bottom: 4%">
+  <div class="container">
+    <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-4">
+      <ng-container *ngFor="let product of storageList">
+        <app-card *ngIf="product.type == type" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>
+      </ng-container>
+    </div>
 </div>

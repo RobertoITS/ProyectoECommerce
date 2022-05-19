@@ -6,10 +6,12 @@ import { ProductComponent } from './pages/product/product.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
-  {path: "allProducts", component: AllProductsComponent},
+  //Esta pagina seria un reciclado, se muestran todos los productos, o
+  //productos especificados por el type
+  {path: "allProducts/:type", component: AllProductsComponent},
   //Creamos parametros que se pasan de un componente a otro en el routing.
   //Despues los instanciamos en el que los envia y recibe:
-  {path: "product/:url/:name/:description", component: ProductComponent}
+  {path: "product/:url/:name/:description/:type", component: ProductComponent}
 ];
 
 @NgModule({

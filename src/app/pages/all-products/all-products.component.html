@@ -1,1 +1,11 @@
-<p>all-products works!</p>
+
+<h1>{{ title }}</h1>
+<div class="container">
+  <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
+    <!--ng-container (contenedor logico) para usar las directivas de ng-->
+    <ng-container *ngFor="let product of storageList">
+      <app-card *ngIf="product.type == title" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>
+      <app-card *ngIf="title == all" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
+    </ng-container>
+  </div>
+</div>
