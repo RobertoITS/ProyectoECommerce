@@ -8,7 +8,7 @@
 
 
 <div class="container">
-  <div class="row row-cols-sm-1 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
     <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
   </div>
 </div>
@@ -21,7 +21,7 @@
 
 
 <div class="container">
-  <div class="row row-cols-sm-2 row-cols-md-3 g-4">
+  <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
     <!--Usamos el ngFor en la app-card, para que no se creen varias row, sino solamente
     las col.
     Instanciamos las Input creadas en el componente card, con los datos obtenidos en el archivo ts
@@ -40,7 +40,7 @@
 </div>
 
 <div class="container">
-  <div class="row row-cols-sm-3 row-cols-md-3 g-4">
+  <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-4">
     <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description"></app-card>
   </div>
 </div>

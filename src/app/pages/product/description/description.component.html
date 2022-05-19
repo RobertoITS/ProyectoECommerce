@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>{{ name }}</h2>
+</div>
+<div class="container">
+  <h2>{{ description }}</h2>
+</div>
+<div class="row p-4">
+  <div class="col-1">
+    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+  </div>
+  <div class="col-11">
+    <p><strong>6</strong> CUOTAS SIN INTERES DE <strong>$908</strong></p>
+  </div>
+  <div class="row">
+    <div class="col-1">
+      <i class="fa fa-money" aria-hidden="true"></i>
+    </div>
+    <div class="col-11">
+      <p><strong>10% de descuento</strong> pago efectivo <strong>(en el local)</strong></p>
+    </div>
+    <a href="#">Ver medios de pago</a>
+    <hr style="margin: 2% 0%;">
+    <div class="row p-2">
+      <div class="col">
+        <select class="form-select" style="width:200px;" aria-label="Default select example">
+          <option selected>Seleccione su talle</option>
+          <option value="1">41</option>
+          <option value="2">42</option>
+          <option value="3">43</option>
+        </select>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-4">
+        <p>Seleccione color:</p>
+      </div>
+      <div class="col-1">
+        <!--Usamos el binding para obtener el valor del objeto seleccionado.
+        Este se deposita en el "value"-->
+        <select [(ngModel)]="selectedColor" (change)="selectColor()" [style.background-color]="selectedColor" style="width:30px;" class="form-select"  aria-label="Default select example">
+          <option *ngFor="let color of colors; let i=index" [style.background-color]="color.hex"
+            [value]="color.hex"></option>
+        </select>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2" style="margin-top: 5%;">
+      <button class="btn btn-primary" type="button">Agregar al carrito</button>
+    </div>
+
+</div>

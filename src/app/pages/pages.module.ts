@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { AllProductsComponent } from './all-products/all-products.component';
 import { ComponentsModule } from '../components/components.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { DescriptionComponent } from './product/description/description.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,17 +14,20 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     ProductComponent,
     HomeComponent,
-    AllProductsComponent
+    AllProductsComponent,
+    DescriptionComponent
   ],
   imports: [
     CommonModule,
     ComponentsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports: [
     HomeComponent,
     AllProductsComponent,
-    ProductComponent
+    ProductComponent,
+    DescriptionComponent
   ]
 })
 export class PagesModule { }

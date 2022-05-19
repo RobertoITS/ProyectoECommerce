@@ -1,4 +1,17 @@
 <!--Todo esto es lo que recibimos de otro componente, lo instanciamos aca-->
-<img [src]="url" alt="recibimos esta imagen de otro componente"/>
-<h1>{{ name }}</h1>
-<h4>{{ description }}</h4>
+<div class="container">
+  <hr style="margin-top: 5%">
+  <h2 class="text-center">DETALLE DEL PRODUCTO</h2>
+  <hr style="margin-bottom: 4%">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 justify-content-md-center">
+    <div class="col">
+      <img class="rounded mx-auto d-block img-fluid" style="height: auto; width: auto" [src]="url" alt="recibimos esta imagen de otro componente"/>
+    </div>
+    <div class="col" style="margin-top: 10px;">
+      <app-description [name]="name" [description]="description"></app-description>
+    </div>
+  </div>
+  <hr style="margin-top: 5%">
+  <h2 class="text-center">RELACIONADOS:</h2>
+  <hr style="margin-bottom: 4%">
+</div>
