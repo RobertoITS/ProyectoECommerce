@@ -8,6 +8,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionComponent } from './product/description/description.component';
 import { FormsModule } from '@angular/forms';
 import { PoliticsComponent } from './politics/politics.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -17,7 +18,8 @@ import { PoliticsComponent } from './politics/politics.component';
     HomeComponent,
     AllProductsComponent,
     DescriptionComponent,
-    PoliticsComponent
+    PoliticsComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

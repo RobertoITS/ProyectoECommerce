@@ -1,19 +1,19 @@
 <!--Todo esto es lo que recibimos de otro componente, lo instanciamos aca-->
 <div class="container">
-  <hr style="margin-top: 5%">
+  <hr class="mt-5">
   <h2 class="text-center">DETALLE DEL PRODUCTO</h2>
-  <hr style="margin-bottom: 4%">
+  <hr class="mb-5">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 justify-content-md-center">
     <div class="col">
-      <img class="rounded mx-auto d-block img-fluid" style="height: auto; width: auto" [src]="url" alt="recibimos esta imagen de otro componente"/>
+      <img class="rounded mx-auto d-block img-fluid w-auto h-auto" [src]="url" alt="Imagen del producto"/>
     </div>
-    <div class="col" style="margin-top: 10px;">
+    <div class="col" class="mt-5">
       <app-description [name]="name" [description]="description"></app-description>
     </div>
   </div>
-  <hr style="margin-top: 5%">
+  <hr class="mt-5">
   <h2 class="text-center">RELACIONADOS:</h2>
-  <hr style="margin-bottom: 4%">
+  <hr class="mb-5">
   <div class="container">
     <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-4">
       <ng-container *ngFor="let product of storageList">

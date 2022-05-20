@@ -6,6 +6,8 @@ import { CardComponent } from './card/card.component';
 import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { MycartComponent } from './mycart/mycart.component';
+import { MycartcardComponent } from './mycartcard/mycartcard.component';
 
 
 
@@ -15,7 +17,9 @@ import { AppRoutingModule } from '../app-routing.module';
     TittleComponent,
     CardComponent,
     OffcanvasComponent,
-    AccordionComponent
+    AccordionComponent,
+    MycartComponent,
+    MycartcardComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +28,9 @@ import { AppRoutingModule } from '../app-routing.module';
     CarrouselComponent,
     TittleComponent,
     CardComponent,
-    OffcanvasComponent
+    OffcanvasComponent,
+    MycartComponent,
+    MycartcardComponent
   ]
 })
 export class ComponentsModule { }
