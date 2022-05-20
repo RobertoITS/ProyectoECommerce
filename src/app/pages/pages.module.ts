@@ -7,6 +7,7 @@ import { ComponentsModule } from '../components/components.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionComponent } from './product/description/description.component';
 import { FormsModule } from '@angular/forms';
+import { PoliticsComponent } from './politics/politics.component';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     ProductComponent,
     HomeComponent,
     AllProductsComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    PoliticsComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     AllProductsComponent,
     ProductComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    PoliticsComponent
   ]
 })
 export class PagesModule { }

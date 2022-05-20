@@ -37,7 +37,7 @@
       <div class="col-1">
         <!--Usamos el binding para obtener el valor del objeto seleccionado.
         Este se deposita en el "value"-->
-        <select [(ngModel)]="selectedColor" (change)="selectColor()" [style.background-color]="selectedColor" style="width:30px;" class="form-select"  aria-label="Default select example">
+        <select [(ngModel)]="selectedColor" [style.background-color]="selectedColor" style="width:30px;" class="form-select"  aria-label="Default select example">
           <option *ngFor="let color of colors; let i=index" [style.background-color]="color.hex"
             [value]="color.hex"></option>
         </select>

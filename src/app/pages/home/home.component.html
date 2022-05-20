@@ -1,25 +1,28 @@
+<!--Carrusel-->
 <app-carrousel></app-carrousel>
 
+<!--Titulo del primer contenedor:-->
 <div class="container">
   <hr style="margin-top: 5%;">
   <h2 class="text-center">Trending top:</h2>
   <hr style="margin-bottom: 4%">
 </div>
 
-
+<!--Las tarjetas, se muestran 3 en tamaño medio, 1 en chico-->
 <div class="container">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
     <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>
   </div>
 </div>
 
+<!--Titulo del segundo contenedor:-->
 <div class="container">
   <hr style="margin-top: 5%;">
   <h2 class="text-center">Destacados:</h2>
   <hr style="margin-bottom: 4%">
 </div>
 
-
+<!--Las tarjetas, se muestran 3 en medio, 2 en chico-->
 <div class="container">
   <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
     <!--Usamos el ngFor en la app-card, para que no se creen varias row, sino solamente
@@ -33,12 +36,14 @@
   </div>
 </div>
 
+<!--Titulo del tercer contenedor-->
 <div class="container">
   <hr style="margin-top: 5%;">
   <h2 class="text-center">Ofertas:</h2>
   <hr style="margin-bottom: 4%">
 </div>
 
+<!--Las tarjetas, se muestran 3 en medio, 3 en chico-->
 <div class="container">
   <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-4">
     <app-card *ngFor="let product of products" [url]="product.url" [name]="product.name" [description]="product.description" [type]="product.type"></app-card>

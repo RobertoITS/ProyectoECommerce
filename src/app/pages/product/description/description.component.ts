@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-description',
@@ -9,7 +10,7 @@ export class DescriptionComponent implements OnInit {
 
   @Input() name: String = ""
   @Input() description: String = ""
-  selectedColor = [{hex: '', name:'', value: 0}]
+  selectedColor = "#FFFFFF"
   colors = [
     {
       hex: '#00759A',
@@ -30,13 +31,14 @@ export class DescriptionComponent implements OnInit {
 
     }
   ]
-  constructor() {
+  //Instanciamos el escuchador del link
+  constructor(private _activatedRoute: ActivatedRoute) {}
 
+  ngOnInit(): void {
+    //Cada vez que se active, actualiza los datos
+    this._activatedRoute.paramMap.subscribe(()=>
+      this.selectedColor = "#FFFFFF"
+    )
   }
 
-  ngOnInit(): void {}
-
-  selectColor(){
-
-  }
 }

@@ -92,12 +92,12 @@
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">NAVEGACION</h5>
 
-          <ul class="list-unstyled mb-0">
+          <ul class="list-unstyled text-start mb-0">
             <li>
-              <a href="#!" class="text-white">Inicio</a>
+              <a routerLink="home" routerLink="" class="text-white">Inicio</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Productos</a>
+              <a [routerLink]="['/allProducts', all]" class="text-white">Productos</a>
             </li>
             <li>
               <a href="#!" class="text-white">Contacto</a>
@@ -106,7 +106,7 @@
               <a href="#!" class="text-white">Como Comprar</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Politica de devolucion</a>
+              <a routerLink="/politics" class="text-white">Politica de devolucion</a>
             </li>
           </ul>
         </div>
@@ -117,34 +117,20 @@
           <h5 class="text-uppercase">Medios de pagos:</h5>
 
           <section class="mb-5">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
-              <i class="fa fa-facebook"></i>
+            <!-- Vise -->
+            <a class="btn btn-outline-light btn-floating m-1" role="button">
+              <i class="fa fa-cc-visa" aria-hidden="true"></i>
             </a>
 
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
-              <i class="fa fa-twitter">
-              </i>
+            <!-- Master Card -->
+            <a class="btn btn-outline-light btn-floating m-1" role="button">
+              <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
             </a>
 
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
-              <i class="fa fa-google">
-              </i>
+            <!-- PayPal -->
+            <a class="btn btn-outline-light btn-floating m-1" role="button">
+              <i class="fa fa-paypal" aria-hidden="true"></i>
             </a>
-
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
-                class="fa fa-instagram"></i></a>
-
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
-                class="fa fa-linkedin"></i></a>
-
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
-                class="fa fa-github"></i></a>
           </section>
         </div>
         <!--Grid column-->
@@ -153,7 +139,7 @@
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">CONTACTENOS</h5>
 
-          <ul class="list-unstyled mb-0">
+          <ul class="list-unstyled text-end mb-0">
             <li>
               <a href="#!" class="text-white">WhatsApp: +54 299 5111111</a>
             </li>
@@ -174,7 +160,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2022 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-white">Desarrollado por HVDevs</a>
   </div>
   <!-- Copyright -->
 </footer>

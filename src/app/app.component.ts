@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProyectoECommerce';
+
+  //Esta funcion hace un scroll top
+  onActivate(event: Event) {
+    window.scroll(0,0);
+  }
 }

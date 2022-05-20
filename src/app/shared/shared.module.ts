@@ -5,6 +5,7 @@ import { ComponentsModule } from '../components/components.module';
 import { FooterComponent } from './footer/footer.component';
 import { FloatbuttonComponent } from './floatbutton/floatbutton.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { ScrollTopButtonComponent } from './scroll-top-button/scroll-top-button.component';
 
 
 
@@ -12,7 +13,8 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    FloatbuttonComponent
+    FloatbuttonComponent,
+    ScrollTopButtonComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { AppRoutingModule } from '../app-routing.module';
   ], exports: [
     NavbarComponent,
     FooterComponent,
-    FloatbuttonComponent
+    FloatbuttonComponent,
+    ScrollTopButtonComponent
   ]
 })
 export class SharedModule { }

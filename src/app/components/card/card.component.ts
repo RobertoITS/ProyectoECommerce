@@ -20,5 +20,14 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
 
   }
+    //Esta funcion hace un scroll top
+  onActivate(event: Event) {
+    // window.scroll(0,0);
 
+    window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+     });
+    }
 }

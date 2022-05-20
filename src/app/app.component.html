@@ -2,7 +2,16 @@
 <!--Aqui colocamos el offcanvas, pero en el app-navbar, esta el llamado al mismo.-->
 <app-offcanvas></app-offcanvas>
 
-<router-outlet></router-outlet>
+<!--Lo que hacemos, es que cada vez que se haya un cambio en el routerLink,
+se reinicie la posicion de la pagina:-->
+<div class="container">
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
+</div>
 
+<!--Footer-->
 <app-footer></app-footer>
+<!--Float button del whatsapp-->
 <app-floatbutton></app-floatbutton>
+<!--Scroll to top button-->
+<app-scroll-top-button></app-scroll-top-button>
+

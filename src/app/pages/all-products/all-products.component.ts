@@ -17,14 +17,15 @@ export class AllProductsComponent implements OnInit {
   all: String = "Todos"
 
   type: String = ""
+
   constructor(private _activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
-    //Actualizamos los valores con un observador
+    //Actualizamos los valores con un observador, para que se actualicen
+    //si la pagina recibe nuevos valores:
     this._activatedRoute.paramMap.subscribe((params: ParamMap)=>
       this.title = params.get('type')!
     )
     this.type = this.title
   }
-
 }

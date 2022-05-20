@@ -7,7 +7,7 @@ Les asignamos los valores obtenidos a cada elemento de este componente:-->
       <div class="card-body">
         <h5 class="card-title">{{ name }}</h5>
         <p class="card-text">{{ description }}</p>
-        <a [routerLink]="['/product', url, name, description, type]" class="btn btn-primary">Comprar</a>
+        <a (click)="onActivate($event)" [routerLink]="['/product', url, name, description, type]" class="btn btn-primary">Comprar</a>
       </div>
     </div>
   </div>

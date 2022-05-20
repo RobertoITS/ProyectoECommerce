@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  @Input() list = []
-
+  //Estos son los valores que le pasamos al product page
   all: String = "Todos"
   dress: String = "Vestido"
   pants: String = "Pantalon"

@@ -8,6 +8,7 @@ import { Product } from 'src/app/model/Product';
 })
 export class HomeComponent implements OnInit {
 
+  //Creamos la lista principal de productos:
   products: Product[] = [
     {url: "https://cdn.pixabay.com/photo/2018/06/25/17/03/fashion-3497413_960_720.jpg", description: "Pantalon de lana. Indumentaria invierno. Varios colores", name: "Pantalon de lana", type: "Pantalon"},
     {url: "https://cdn.pixabay.com/photo/2018/06/25/17/01/fashion-3497406_960_720.jpg", description: "Vestido de algodon. Indumentaria de fiesta. Varios colores", name: "Vestidos de gala", type: "Vestido"},
