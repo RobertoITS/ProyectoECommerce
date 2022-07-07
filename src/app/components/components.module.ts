@@ -8,6 +8,10 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { MycartComponent } from './mycart/mycart.component';
 import { MycartcardComponent } from './mycartcard/mycartcard.component';
+import {MatInputModule} from '@angular/material/input';
+import { NgModel } from '@angular/forms';
+import { DialogComponent } from './dialog/dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -19,11 +23,14 @@ import { MycartcardComponent } from './mycartcard/mycartcard.component';
     OffcanvasComponent,
     AccordionComponent,
     MycartComponent,
-    MycartcardComponent
+    MycartcardComponent,
+    DialogComponent
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule,
+    MatDialogModule
   ], exports: [
     CarrouselComponent,
     TittleComponent,

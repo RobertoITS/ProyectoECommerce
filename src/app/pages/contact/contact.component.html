@@ -19,20 +19,36 @@
   </div>
   <div class="col">
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Ingrese su nombre completo">
+      </mat-form-field>
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Direccion de correo</label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="correo@ejemplo.com">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+               placeholder="Ej. pat@example.com">
+        <mat-hint>Ingrese una direccion de email valida</mat-hint>
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Ingrese una dirección de email válida
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email es <strong>requerido</strong>
+        </mat-error>
+      </mat-form-field>
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Numero de contacto:</label>
-      <input type="email" class="form-control" id="inputNumbre" placeholder="+ 54 9 299 5111111">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Numero de contacto</mat-label>
+        <input type="phone" matInput placeholder="+ 54 9 299 5111111">
+      </mat-form-field>
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Mensaje (opcional):</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Mensaje (opcional)</mat-label>
+        <textarea matInput placeholder="Datos sobre la consulta..."></textarea>
+      </mat-form-field>
     </div>
   </div>
 </div>

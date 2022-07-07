@@ -3,6 +3,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
+    <button type="button" class="btn-close" (click)="get" aria-label="Close"></button>
     <hr>
     <div class="container">
       <div class="row">
@@ -12,17 +13,8 @@
     </div>
     <hr>
     <div class="row row-cols-1">
-      <div class="col">
-        <app-mycartcard></app-mycartcard>
-      </div>
-      <div class="col">
-        <app-mycartcard></app-mycartcard>
-      </div>
-      <div class="col">
-        <app-mycartcard></app-mycartcard>
-      </div>
-      <div class="col">
-        <app-mycartcard></app-mycartcard>
+      <div class="col" *ngFor="let product from cart">
+        <app-mycartcard [name]="product.name" [description]="product.description" [price]="3500"></app-mycartcard>
       </div>
     </div>
   </div>

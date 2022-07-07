@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Confirmación</h2>
+<div mat-dialog-content>
+  <p>¿Desea agregar este producto?</p>
+</div>
+<div mat-dialog-actions>
+  <button class="btn btn-primary" (click)="onNoClick()"  type="button">Volver</button>
+  <button class="btn btn-primary" [mat-dialog-close]="data" type="button">Agregar al carrito</button>
+</div>

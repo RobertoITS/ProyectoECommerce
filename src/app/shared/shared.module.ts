@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FloatbuttonComponent } from './floatbutton/floatbutton.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { ScrollTopButtonComponent } from './scroll-top-button/scroll-top-button.component';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -19,7 +20,8 @@ import { ScrollTopButtonComponent } from './scroll-top-button/scroll-top-button.
   imports: [
     CommonModule,
     ComponentsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule
   ], exports: [
     NavbarComponent,
     FooterComponent,

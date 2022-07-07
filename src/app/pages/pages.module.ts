@@ -6,9 +6,12 @@ import { AllProductsComponent } from './all-products/all-products.component';
 import { ComponentsModule } from '../components/components.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { DescriptionComponent } from './product/description/description.component';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PoliticsComponent } from './politics/politics.component';
 import { ContactComponent } from './contact/contact.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -25,7 +28,11 @@ import { ContactComponent } from './contact/contact.component';
     CommonModule,
     ComponentsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatDialogModule
   ],
   exports: [
     HomeComponent,
